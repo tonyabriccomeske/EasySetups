@@ -4,10 +4,8 @@
       "path": ".AL-Go"
     },
     {
-      "path": "Easy Setups"
+      "path": "EasySetups"
     }
   ],
-  "settings": {
-    "powershell.cwd": "c:\\GitHub_tonyabriccomeske\\EasySetups\\Easy Setups"
-  }
+  "settings": {}
 }
