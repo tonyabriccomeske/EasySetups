@@ -1,0 +1,46 @@
+{
+    "name": "Ruleset",
+    "description": "Adjusted Rules",
+    "rules": [
+        {
+            "id": "AA0215",
+            "action": "Hidden",
+            "justification": "Use JDEV standard file naming convention"
+        },
+        {
+            "id": "AA0214",
+            "action": "Hidden",
+            "justification": "Erroneous error where local var used for lookup gets: record should be modified before saving"
+       },
+       {
+            "id": "AL1023",
+            "action": "Hidden",
+           "justification": "This is OK -> Avoid AL1023 Error with dependency app not found. This need hidden when we setup older version but use latest or another version of app"
+       },
+       {
+           "id": "AA0102",
+           "action": "Hidden",
+           "justification": "Field controls in pages of type API should have a camel case name. - can't update since these fields should match Azure API"
+       },
+       {
+           "id": "AL0432",
+           "action": "Hidden",
+           "justification": "Table 'Invoice Post. Buffer' is marked for removal. Reason: This table will be marked as temporary. Please ensure you do not store any data in the table.. Tag: 18.0."
+       },
+       {
+           "id": "AA0072",
+           "action": "Hidden",
+           "justification": "The name of variables and parameters must be suffixed with the type or object name."
+       },
+       {
+           "id": "AS0013",
+           "action": "Hidden",
+           "justification": "The field identifier 'XXXXX' is not valid. It must be within the range '[XXXXX..XXXXX]', which is allocated to the application, and outside the range '[XXXXX..XXXXX]', which is allocated to per-tenant customizations."
+       },
+       {
+           "id": "AS0084",
+           "action": "Hidden",
+           "justification": "The ID range '[XXXXX..XXXXX]' is not valid. It must be within the range allocated to the partner for AppSource, within the range '[XXXXXXX..XXXXXXX]' allocated to AppSource applications, and outside the range '[XXXXX..XXXXX]' allocated to per-tenant customizations."
+       }
+    ]
+}
