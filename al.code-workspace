@@ -7,5 +7,7 @@
       "path": "Easy Setups"
     }
   ],
-  "settings": {}
+  "settings": {
+    "powershell.cwd": "c:\\GitHub_tonyabriccomeske\\EasySetups\\Easy Setups"
+  }
 }
