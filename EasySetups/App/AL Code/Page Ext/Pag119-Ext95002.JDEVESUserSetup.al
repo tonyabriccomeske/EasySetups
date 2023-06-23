@@ -4,7 +4,7 @@ pageextension 95002 "JDEV-ES User Setup" extends "User Setup" //119
     {
         addafter("User ID")
         {
-            field("JDEV-ES JDEVich"; Rec."JDEV-ES Admin")
+            field("JDEV-ES Admin"; Rec."JDEV-ES Admin")
             {
                 ApplicationArea = All;
                 ToolTip = 'Specifies whether or not the user is a JDEVich tester.';

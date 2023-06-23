@@ -47,6 +47,7 @@ codeunit 95002 "JDEV-ES Sales Management"
         ParamSalesHeader.Validate(Ship, ParamJDEVESEasySetups."Sales Ship");
         ParamSalesHeader.Validate(Invoice, ParamJDEVESEasySetups."Sales Invoice");
         ParamSalesHeader.Validate(Receive, ParamJDEVESEasySetups."Sales Receive");
+        ParamSalesHeader."JDEV-ES Created by Easy Setup" := true;
 
         ParamSalesHeader.Insert(true);
         if ParamJDEVESEasySetups."Sales Location" <> '' then

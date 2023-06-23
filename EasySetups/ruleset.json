@@ -41,6 +41,11 @@
            "id": "AS0084",
            "action": "Hidden",
            "justification": "The ID range '[XXXXX..XXXXX]' is not valid. It must be within the range allocated to the partner for AppSource, within the range '[XXXXXXX..XXXXXXX]' allocated to AppSource applications, and outside the range '[XXXXX..XXXXX]' allocated to per-tenant customizations."
+       },
+       {
+        "id": "AA0218",
+        "action":"Hidden",
+        "justification": "No one has time to write tooltips"
        }
     ]
 }

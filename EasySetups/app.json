@@ -27,6 +27,6 @@
     }
   ],
   "suppressWarnings": [
-    "AA0215"
+    "AA0215", "AA0218"
   ]
 }

@@ -1,5 +1,16 @@
-pageextension 95006 "JDEV-ES Blanket Sls Orders" extends "Blanket Sales Orders" //9303
+pageextension 95006 "JDEV-ES BlanketSalesOrders" extends "Blanket Sales Orders" //9303
 {
+    layout
+    {
+        addlast(Control1)
+        {
+            field("JDEV-ES Created by Easy Setup"; Rec."JDEV-ES Created by Easy Setup")
+            {
+                ApplicationArea = All;
+                Visible = false;
+            }
+        }
+    }
     actions
     {
         addlast(processing)
@@ -27,9 +38,9 @@ pageextension 95006 "JDEV-ES Blanket Sls Orders" extends "Blanket Sales Orders" 
         UserSetup: Record "User Setup";
     begin
         DisplayESAction := false;
-        UserSetup.Get(UserId());
-        if (UserSetup."JDEV-ES Admin") and (UserSetup."JDEV-ES Test") then
-            DisplayESAction := true;
+        if UserSetup.Get(UserId()) then
+            if (UserSetup."JDEV-ES Admin") and (UserSetup."JDEV-ES Test") then
+                DisplayESAction := true;
     end;
 
     var

@@ -7,5 +7,13 @@
       "path": "EasySetups"
     }
   ],
-  "settings": {}
+  "settings": {
+    "CRS.OnSaveAlFileAction": "Rename",
+    "CRS.ObjectNamePrefix": "JDEV-ES ",
+    "CRS.FileNamePattern": "<ObjectTypeShort><ObjectId>.<ObjectNameShort>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectTypeShort><BaseId>-Ext<ObjectId>.<ObjectNameShort>.al",
+    "CRS.ExtensionObjectNamePattern": "<Prefix><BaseNameShort>",
+    "al.enableCodeAnalysis": true,
+    "al.codeAnalyzers": ["${CodeCop}"]
+  }
 }
