@@ -1,5 +1,16 @@
-pageextension 95001 "JDEV-ES Sales Order List" extends "Sales Order List" //9305
+pageextension 95001 "JDEV-ES SalesOrderList" extends "Sales Order List" //9305
 {
+    layout
+    {
+        addlast(Control1)
+        {
+            field("JDEV-ES Created by Easy Setup"; Rec."JDEV-ES Created by Easy Setup")
+            {
+                ApplicationArea = All;
+                Visible = false;
+            }
+        }
+    }
     actions
     {
         addlast(processing)
@@ -27,9 +38,9 @@ pageextension 95001 "JDEV-ES Sales Order List" extends "Sales Order List" //9305
         UserSetup: Record "User Setup";
     begin
         DisplayESAction := false;
-        UserSetup.Get(UserId());
-        if (UserSetup."JDEV-ES Admin") and (UserSetup."JDEV-ES Test") then
-            DisplayESAction := true;
+        if UserSetup.Get(UserId()) then
+            if (UserSetup."JDEV-ES Admin") and (UserSetup."JDEV-ES Test") then
+                DisplayESAction := true;
     end;
 
     var

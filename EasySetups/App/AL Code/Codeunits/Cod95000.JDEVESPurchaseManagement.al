@@ -52,6 +52,7 @@ codeunit 95000 "JDEV-ES Purchase Management"
         ParamPurchaseHeader.Init();
         ParamPurchaseHeader.Validate("Document Type", ParamDocumentType);
         ParamPurchaseHeader.Validate("Buy-from Vendor No.", ParamJDEVESEasySetups."Purchase Vendor");
+        ParamPurchaseHeader."JDEV-ES Created by Easy Setup" := true;
         ParamPurchaseHeader.Insert(true);
 
 
